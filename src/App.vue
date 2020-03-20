@@ -44,6 +44,7 @@ body {
 }
 
 main {
-    margin-top: 70px;
+    position: relative;
+    top: 70px;
 }
 </style>

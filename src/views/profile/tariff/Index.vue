@@ -4,7 +4,7 @@
       <sui-card>
         <sui-image src="static/images/avatar/large/matthew.png" />
         <sui-card-content>
-          <sui-card-header>Matt Giampietro</sui-card-header>
+          <sui-card-header>Тариф «Базовый»</sui-card-header>
           <sui-card-meta>Friends</sui-card-meta>
           <sui-card-description>
             Matthew is an interior designer living in New York.
@@ -18,7 +18,7 @@
       <sui-card>
         <sui-image src="static/images/avatar/large/molly.png" />
         <sui-card-content>
-          <sui-card-header>Molly</sui-card-header>
+          <sui-card-header>Тариф «Золотой»</sui-card-header>
           <sui-card-meta>Coworker</sui-card-meta>
           <sui-card-description>
             Molly is a personal assistant living in Paris.
@@ -32,7 +32,7 @@
       <sui-card>
         <sui-image src="static/images/avatar/large/elyse.png" />
         <sui-card-content>
-          <sui-card-header>Elyse</sui-card-header>
+          <sui-card-header>Тариф «Платина»</sui-card-header>
           <sui-card-meta>Coworker</sui-card-meta>
           <sui-card-description>
             Elyse is a copywriter working in New York.
@@ -50,9 +50,7 @@
 <script>
 export default {
     data() {
-        return {
-            coords: ['61.663811', '50.818624'],
-        };
+        return {};
     },
 };
 </script>
@@ -60,6 +58,7 @@ export default {
 <style lang="scss">
 .tariff__list {
   max-width: 960px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
