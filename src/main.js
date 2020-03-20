@@ -6,6 +6,9 @@ import store from './store';
 
 import EmptyView from '@/components/EmptyView';
 import YmapPlugin from 'vue-yandex-maps';
+import { Plugin } from 'vue-fragment';
+
+import 'semantic-ui-css/semantic.min.css';
 
 Vue.component(EmptyView);
 
@@ -17,10 +20,10 @@ const settings = {
 };
 
 Vue.use(YmapPlugin, settings);
+Vue.use(Plugin);
+Vue.use(SuiVue);
 
 Vue.config.productionTip = false;
-
-Vue.use(SuiVue);
 
 new Vue({
     router,
