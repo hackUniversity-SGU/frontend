@@ -9,6 +9,11 @@ const routes = [
         name: 'parcel',
         component: () => import('@/views/parcel/Map'),
     },
+    {
+        path: '/profile/tariff',
+        name: 'parcel',
+        component: () => import('@/views/profile/tariff/Index'),
+    },
 ];
 
 const router = new VueRouter({

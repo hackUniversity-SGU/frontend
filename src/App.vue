@@ -1,6 +1,21 @@
 <template>
-    <router-view />
+    <div class="app">
+        <header />
+        <main>
+            <router-view />
+        </main>
+    </div>
 </template>
+
+<script>
+import Header from './components/Header';
+
+export default {
+    data() {
+        return {};
+    },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -26,5 +41,9 @@ body {
             color: #42b983;
         }
     }
+}
+
+main {
+    margin-top: 70px;
 }
 </style>
