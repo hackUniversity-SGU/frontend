@@ -34,6 +34,7 @@ export default {
 
 <style lang="scss">
 header {
+  display: flex !important;
   position: fixed;
   top: 0px;
   left: 0px;
