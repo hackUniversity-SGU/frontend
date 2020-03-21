@@ -11,7 +11,7 @@ const routes = [
     },
     {
         path: '/profile/tariff',
-        name: 'parcel',
+        name: 'profile.tariff',
         component: () => import('@/views/profile/tariff/Index'),
     },
 ];

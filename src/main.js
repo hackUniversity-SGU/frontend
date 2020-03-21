@@ -6,9 +6,13 @@ import store from './store';
 
 import YmapPlugin from 'vue-yandex-maps';
 import { Plugin } from 'vue-fragment';
+// import VueCarousel from 'vue-carousel';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 import 'semantic-ui-css/semantic.min.css';
 
+// import style
+import 'swiper/css/swiper.css';
 // Vue.component(EmptyView);
 
 const settings = {
@@ -18,9 +22,11 @@ const settings = {
     version: '2.1',
 };
 
+// Vue.use(VueCarousel);
 Vue.use(YmapPlugin, settings);
 Vue.use(Plugin);
 Vue.use(SuiVue);
+Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false;
 
