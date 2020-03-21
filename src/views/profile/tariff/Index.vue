@@ -1,57 +1,62 @@
 <template>
-  <div class="tariff__list">
-    <sui-card-group :items-per-row="3">
-      <sui-card>
-        <sui-image src="static/images/avatar/large/matthew.png" />
-        <sui-card-content>
-          <sui-card-header>Тариф «Базовый»</sui-card-header>
-          <sui-card-meta>Friends</sui-card-meta>
-          <sui-card-description>
-            Matthew is an interior designer living in New York.
-          </sui-card-description>
-        </sui-card-content>
-        <sui-card-content extra>
-          <sui-icon name="user" /> 75 Friends
-          <span slot="right">Joined in 2013</span>
-        </sui-card-content>
-      </sui-card>
-      <sui-card>
-        <sui-image src="static/images/avatar/large/molly.png" />
-        <sui-card-content>
-          <sui-card-header>Тариф «Золотой»</sui-card-header>
-          <sui-card-meta>Coworker</sui-card-meta>
-          <sui-card-description>
-            Molly is a personal assistant living in Paris.
-          </sui-card-description>
-        </sui-card-content>
-        <sui-card-content extra>
-          <sui-icon name="user" /> 35 Friends
-          <span slot="right">Joined in 2011</span>
-        </sui-card-content>
-      </sui-card>
-      <sui-card>
-        <sui-image src="static/images/avatar/large/elyse.png" />
-        <sui-card-content>
-          <sui-card-header>Тариф «Платина»</sui-card-header>
-          <sui-card-meta>Coworker</sui-card-meta>
-          <sui-card-description>
-            Elyse is a copywriter working in New York.
-          </sui-card-description>
-        </sui-card-content>
-        <sui-card-content extra>
-          <sui-icon name="user" /> 151 Friends
-          <span slot="right">Joined in 2014</span>
-        </sui-card-content>
-      </sui-card>
-    </sui-card-group>
+  <div>
+    <header-page />
+    <main>
+      <div class="tariff__list">
+        <div class="list__item"></div>
+        <sui-card-group :items-per-row="3">
+          <sui-card>
+            <!-- <sui-image src="static/images/avatar/large/matthew.png" /> -->
+            <sui-card-content>
+              <sui-card-header>Тариф «Базовый»</sui-card-header>
+              <sui-card-meta>Для желающих попробывать</sui-card-meta>
+              <sui-card-description>Matthew is an interior designer living in New York.</sui-card-description>
+            </sui-card-content>
+            <sui-card-content extra>
+              <sui-icon name="user" />75 Friends
+              <span slot="right">Joined in 2013</span>
+            </sui-card-content>
+          </sui-card>
+          <sui-card>
+            <!-- <sui-image src="static/images/avatar/large/molly.png" /> -->
+            <sui-card-content>
+              <sui-card-header>Тариф «Золотой»</sui-card-header>
+              <sui-card-meta>Универсальный</sui-card-meta>
+              <sui-card-description>Molly is a personal assistant living in Paris.</sui-card-description>
+            </sui-card-content>
+            <sui-card-content extra>
+              <sui-icon name="user" />35 Friends
+              <span slot="right">Joined in 2011</span>
+            </sui-card-content>
+          </sui-card>
+          <sui-card>
+            <!-- <sui-image src="static/images/avatar/large/elyse.png" /> -->
+            <sui-card-content>
+              <sui-card-header>Тариф «Платина»</sui-card-header>
+              <sui-card-meta>Для любителей литературы</sui-card-meta>
+              <sui-card-description>Elyse is a copywriter working in New York.</sui-card-description>
+            </sui-card-content>
+            <sui-card-content extra>
+              <sui-icon name="user" />151 Friends
+              <span slot="right">Joined in 2014</span>
+            </sui-card-content>
+          </sui-card>
+        </sui-card-group>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
+import Header from "../../../components/Header";
+
 export default {
-    data() {
-        return {};
-    },
+  data() {
+    return {};
+  },
+  components: {
+    "header-page": Header
+  }
 };
 </script>
 
