@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 :root {
   --card-width: 240px;
 }
