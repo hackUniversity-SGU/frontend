@@ -1,10 +1,16 @@
 <template>
   <div class="index-page">
     <main>
-      <h1>Безлимитная коллекция <br /> печатных книг по подписке</h1>
+      <h1>
+        Безлимитная коллекция
+        <br />печатных книг по подписке
+      </h1>
       <div class="description">
-        Зарегистрируйтесь и берите интересную для вас литературу в <br/>
-        ближайщих от вас постаматах.
+        Зарегистрируйтесь и берите интересную для вас литературу в
+        <br />ближайщих от вас постаматах.
+      </div>
+      <div class="video">
+        <youtube :video-id="videoId"></youtube>
       </div>
     </main>
     <div class="back-shape" />
@@ -17,14 +23,15 @@ import "../assets/MuseoSansCyrl-900.woff2";
 
 export default {
   data() {
-    return {};
+    return {
+      videoId: "eup3_i_5uaw"
+    };
   }
 };
 </script>
 
 <style lang="scss">
 .index-page {
-
   h1 {
     font-family: "font900";
     font-size: 3.2em;
@@ -41,7 +48,20 @@ export default {
   }
 
   main {
+    position: relative;
     padding: 0px 60px;
+
+    .video {
+      position: absolute;
+      right: 100px;
+      top: 145px;
+      width: 660px;
+      height: 380px;
+      background: #fbfbfb;
+      border-radius: 7px;
+      box-shadow: 0 5px 11px 0 rgba(192, 193, 193, 0.47);
+      padding: 10px;
+    }
   }
 
   .back-shape {
@@ -50,7 +70,7 @@ export default {
     height: calc(100vh - 70px);
     width: 100%;
     background: #212121;
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 10% 100%);
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 20% 100%);
     z-index: -1;
   }
 }

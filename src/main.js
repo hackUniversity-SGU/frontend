@@ -6,6 +6,10 @@ import store from './store';
 
 import YmapPlugin from 'vue-yandex-maps';
 import { Plugin } from 'vue-fragment';
+import VueYouTubeEmbed from 'vue-youtube-embed'
+
+Vue.use(VueYouTubeEmbed)
+
 // import VueCarousel from 'vue-carousel';
 // import VueAwesomeSwiper from 'vue-awesome-swiper';
 
