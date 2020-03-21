@@ -45,6 +45,7 @@
         </div>
       </div>
     </main>
+    <div class="back-shape" />
   </div>
 </template>
 
@@ -121,7 +122,7 @@ export default {
           padding: 15px 50px;
           border: none;
           color: #fff;
-          background: #525252;
+          background: #212121;
           font-size: 1.1em;
           border-radius: 5px;
           cursor: pointer;
@@ -147,7 +148,17 @@ export default {
   }
 
   main {
-    margin: 0px 60px;
+    padding: 0px 60px;
+  }
+
+  .back-shape {
+    position: absolute;
+    top: 70px;
+    height: 100%;
+    width: 100%;
+    background: #212121;
+    clip-path: polygon(100% 0, 100% 100%, 10% 100%);
+    z-index: -1;
   }
 }
 
