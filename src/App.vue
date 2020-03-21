@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss">
+$modal-radius: 10px;
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -49,5 +51,42 @@ body {
 main {
     position: relative;
     top: 70px;
+}
+
+.ui.modals.dimmer {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ui.modal {
+    border-radius: $modal-radius !important;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 !important;
+    margin-left: 2.5% !important;
+
+    .modal-header {
+        border-bottom: none !important;
+        border-radius: $modal-radius $modal-radius 0 0 !important;
+    }
+
+    .modal-content {
+        // height: 79vh;
+        padding-top: 0 !important;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        border-radius: 0 0 $modal-radius $modal-radius !important;
+    }
+}
+
+.ui.rating {
+    i.icon {
+        color: #aaa;
+        &:hover {
+            color: #efefef;
+        }
+    }
+    i.active.icon {
+        color: yellow !important;
+    }
 }
 </style>
