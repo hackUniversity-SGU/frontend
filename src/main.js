@@ -12,11 +12,10 @@ Vue.use(VueYouTubeEmbed)
 
 // import VueCarousel from 'vue-carousel';
 // import VueAwesomeSwiper from 'vue-awesome-swiper';
+import PortalVue from 'portal-vue';
 
 import 'semantic-ui-css/semantic.min.css';
 import 'slick-carousel/slick/slick.css';
-
-// Vue.component(EmptyView);
 
 const settings = {
     apiKey: '',
@@ -25,11 +24,10 @@ const settings = {
     version: '2.1',
 };
 
-// Vue.use(VueCarousel);
+Vue.use(PortalVue);
 Vue.use(YmapPlugin, settings);
 Vue.use(Plugin);
 Vue.use(SuiVue);
-// Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false;
 
