@@ -19,6 +19,11 @@ const routes = [
         name: 'profileAccount',
         component: () => import('@/views/profile/account/Index'),
     },
+    {
+        path: '/',
+        name: 'index',
+        component: () => import('@/views/Index'),
+    },
 ];
 
 const router = new VueRouter({
