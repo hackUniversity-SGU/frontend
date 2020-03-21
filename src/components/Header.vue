@@ -42,7 +42,8 @@ header {
   background: #fff;
   z-index: 1000;
   display: flex;
-  margin: 0px 10px;
+  padding: 0px 10px;
+  box-shadow: 0 2px 10px 0px rgb(241, 240, 237);
 }
 
 .logo img {
@@ -82,7 +83,7 @@ header {
   margin-left: 42px;
   border-radius: 100%;
   background-color: #fff;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: opacity 0.4s ease;
   align-self: center;
