@@ -5,16 +5,16 @@
     </div>
     <div class="nav">
       <div class="nav__item">
-        <a href="/profile/tariff">Линейка тарифов</a>
+        <router-link to="/profile/tariff">Линейка тарифов</router-link>
       </div>
       <div class="nav__item">
-        <a href="/parcels">Карта постаматов</a>
+        <router-link to="/parcels">Карта постаматов</router-link>
       </div>
     </div>
     <div class="auth">
-      <a class="profile-btn" href="/profile/account">
+      <router-link class="profile-btn" to="/profile/account">
         <sui-icon name="user" />
-      </a>
+      </router-link>
     </div>
     <div class="toggle">
       <div class="toggle__btn">
