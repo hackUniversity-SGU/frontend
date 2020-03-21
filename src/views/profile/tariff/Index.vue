@@ -1,6 +1,5 @@
 <template>
   <div class="tariff">
-    <header-page />
     <main>
       <h1>Доступная линейка тарифов</h1>
       <div class="description">
@@ -8,61 +7,54 @@
         <br />Вот что мы можем предложить.
       </div>
       <div class="tariff__list">
-        <div class="list__item"></div>
-        <sui-card-group :items-per-row="3">
-          <sui-card>
-            <!-- <sui-image src="static/images/avatar/large/matthew.png" /> -->
-            <sui-card-content>
-              <sui-card-header>Тариф «Базовый»</sui-card-header>
-              <sui-card-meta>Для желающих попробывать</sui-card-meta>
-              <sui-card-description>Matthew is an interior designer living in New York.</sui-card-description>
-            </sui-card-content>
-            <sui-card-content extra>
-              <sui-icon name="user" />75 Friends
-              <span slot="right">Joined in 2013</span>
-            </sui-card-content>
-          </sui-card>
-          <sui-card>
-            <!-- <sui-image src="static/images/avatar/large/molly.png" /> -->
-            <sui-card-content>
-              <sui-card-header>Тариф «Золотой»</sui-card-header>
-              <sui-card-meta>Универсальный</sui-card-meta>
-              <sui-card-description>Molly is a personal assistant living in Paris.</sui-card-description>
-            </sui-card-content>
-            <sui-card-content extra>
-              <sui-icon name="user" />35 Friends
-              <span slot="right">Joined in 2011</span>
-            </sui-card-content>
-          </sui-card>
-          <sui-card>
-            <!-- <sui-image src="static/images/avatar/large/elyse.png" /> -->
-            <sui-card-content>
-              <sui-card-header>Тариф «Платина»</sui-card-header>
-              <sui-card-meta>Для любителей литературы</sui-card-meta>
-              <sui-card-description>Elyse is a copywriter working in New York.</sui-card-description>
-            </sui-card-content>
-            <sui-card-content extra>
-              <sui-icon name="user" />151 Friends
-              <span slot="right">Joined in 2014</span>
-            </sui-card-content>
-          </sui-card>
-        </sui-card-group>
+        <div class="list__item">
+          <div class="item__name">Тариф «Базовый»</div>
+          <div class="item__target">Для тех, кто хочет попробывать сервис.</div>
+          <div class="item__opportunities">
+            <h3>Возможности:</h3>
+            <ul>
+              <li>Возможность брать любую доступную книгу в ближайщих постоматах</li>
+              <li>Бесплатный период пользования книгой 7 дней</li>
+              <li>Возможность заказа 1 доступной в интернет-магазине книги за месяц любой в 
+                ближайщий постомат </li>
+              <li>Скидка при покупке взятой книги 15%</li>
+            </ul>
+          </div>
+          <div class="item__price">290 руб.</div>
+          <div class="item__action">
+            <button>Оформить</button>
+          </div>
+        </div>
+        <div class="list__item">
+          <div class="item__name">Тариф «Продвинутый»</div>
+          <div class="item__target">Для тех, кто любит читать.</div>
+          <div class="item__opportunities">
+            <h3>Возможности:</h3>
+            <ul>
+              <li>Возможность брать любую доступную книгу в ближайщих постоматах</li>
+              <li>Бесплатный период пользования книгой 14 дней</li>
+              <li>Возможность заказа 2 доступных в интернет-магазине книг за месяц любой в 
+                ближайщий постомат </li>
+              <li>Скидка при покупке взятой книги 25%</li>
+            </ul>
+          </div>
+          <div class="item__price">790 руб.</div>
+          <div class="item__action">
+            <button>Оформить</button>
+          </div>
+        </div>
       </div>
     </main>
   </div>
 </template>
 
 <script>
-import Header from "../../../components/Header";
 import "../../../assets/MuseoSansCyrl-700.woff2";
 import "../../../assets/MuseoSansCyrl-900.woff2";
 
 export default {
   data() {
     return {};
-  },
-  components: {
-    "header-page": Header
   }
 };
 </script>
@@ -74,6 +66,69 @@ export default {
     margin-top: 55px;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+
+    .list__item {
+      position: relative;
+      margin-bottom: 130px;
+      height: 680px;
+      background: #fbfbfb;
+      border-radius: 7px;
+      box-shadow: 0 10px 34px 0 rgba(175, 196, 208, 0.47);
+      padding-bottom: 10px;
+      padding: 50px 40px 30px;
+
+      .item__name {
+        font-family: "font900";
+        font-size: 2em;
+      }
+
+      .item__target {
+        margin: 25px 5px 10px;
+        line-height: 1.9em;
+        font-size: 15.5px;
+      }
+
+      .item__opportunities {
+        margin-top: 30px;
+        line-height: 1.9em;
+        font-size: 15.5px;
+
+        h3 {
+          font-size: 1.5em;
+          font-family: "font900";
+        }
+      }
+
+      .item__price {
+        position: absolute;
+        font-family: "font900";
+        font-size: 1.9em;
+        color: red;
+        bottom: 135px;
+        right: 60px;
+      }
+
+      .item__action {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+
+        button {
+          font-family: "font900";
+          padding: 15px 50px;
+          border: none;
+          color: #fff;
+          background: #525252;
+          font-size: 1.1em;
+          border-radius: 5px;
+          cursor: pointer;
+          box-shadow: 0 7px 9px rgba(33, 33, 33, 0.2);
+        }
+      }
+    }
   }
 
   h1 {
@@ -92,7 +147,7 @@ export default {
   }
 
   main {
-    margin: 0px 40px;
+    margin: 0px 60px;
   }
 }
 
