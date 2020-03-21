@@ -5,7 +5,7 @@
     </div>
     <div class="nav">
       <div class="nav__item">
-        <a href="/parcels">Карта постоматов</a>
+        <a href="/parcels">Карта постаматов</a>
       </div>
       <div class="nav__item">
         <a href="/profile/tariff">Линейка тарифов</a>
