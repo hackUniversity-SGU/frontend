@@ -14,6 +14,11 @@ const routes = [
         name: 'profileTariff',
         component: () => import('@/views/profile/tariff/Index'),
     },
+    {
+        path: '/profile/account',
+        name: 'profileAccount',
+        component: () => import('@/views/profile/account/Index'),
+    },
 ];
 
 const router = new VueRouter({

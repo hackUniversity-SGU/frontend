@@ -5,14 +5,14 @@
     </div>
     <div class="nav">
       <div class="nav__item">
-        <a href="/parcels">Карта постаматов</a>
+        <a href="/profile/tariff">Линейка тарифов</a>
       </div>
       <div class="nav__item">
-        <a href="/profile/tariff">Линейка тарифов</a>
+        <a href="/parcels">Карта постаматов</a>
       </div>
     </div>
     <div class="auth">
-      <a class="profile-btn" href="#">
+      <a class="profile-btn" href="/profile/account">
         <sui-icon name="user" />
       </a>
     </div>
@@ -65,7 +65,7 @@ header {
 
 .header .nav__item a {
   color: #111111;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
 }
 
