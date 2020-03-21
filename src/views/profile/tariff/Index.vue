@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <div class="tariff">
     <header-page />
     <main>
+      <h1>Доступная линейка тарифов</h1>
+      <div class="description">
+        Подберите наиболее подходящий для вас тариф.
+        <br />Вот что мы можем предложить.
+      </div>
       <div class="tariff__list">
         <div class="list__item"></div>
         <sui-card-group :items-per-row="3">
@@ -49,6 +54,8 @@
 
 <script>
 import Header from "../../../components/Header";
+import "../../../assets/MuseoSansCyrl-700.woff2";
+import "../../../assets/MuseoSansCyrl-900.woff2";
 
 export default {
   data() {
@@ -61,10 +68,41 @@ export default {
 </script>
 
 <style lang="scss">
-.tariff__list {
-  max-width: 960px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
+.tariff {
+  .tariff__list {
+    max-width: 960px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-family: "font900";
+    font-size: 3.2em;
+    color: red;
+  }
+
+  .description {
+    font-family: "font700";
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #525252;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  main {
+    margin: 0px 40px;
+  }
+}
+
+@font-face {
+  font-family: "font700";
+  src: url("../../../assets/MuseoSansCyrl-700.woff2");
+}
+
+@font-face {
+  font-family: "font900";
+  src: url("../../../assets/MuseoSansCyrl-900.woff2");
 }
 </style>
