@@ -149,6 +149,7 @@ export default {
       border-radius: 7px;
       box-shadow: 0 3px 5px 0 rgba(199, 204, 207, 0.47);
       padding-bottom: 10px;
+      border: 3px solid;
 
       .title {
         font-family: "font900";
