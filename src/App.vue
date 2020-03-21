@@ -1,5 +1,6 @@
 <template>
     <div class="app">
+        <portal-target name="semantic-ui-vue" />
         <page-header />
         <main>
             <router-view />
@@ -16,7 +17,7 @@ export default {
     },
     components: {
         'page-header': Header,
-    }
+    },
 };
 </script>
 
