@@ -54,7 +54,7 @@ main {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.ui.modal.fullscreen {
+.ui.modal {
     border-radius: $modal-radius !important;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
     margin: 0 !important;
@@ -66,12 +66,24 @@ main {
     }
 
     .modal-content {
-        height: 79vh;
+        // height: 79vh;
         padding-top: 0 !important;
         overflow-x: hidden;
         overflow-y: auto;
         position: relative;
         border-radius: 0 0 $modal-radius $modal-radius !important;
+    }
+}
+
+.ui.rating {
+    i.icon {
+        color: #aaa;
+        &:hover {
+            color: #efefef;
+        }
+    }
+    i.active.icon {
+        color: yellow !important;
     }
 }
 </style>

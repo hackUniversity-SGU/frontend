@@ -7,12 +7,11 @@ import store from './store';
 import YmapPlugin from 'vue-yandex-maps';
 import { Plugin } from 'vue-fragment';
 // import VueCarousel from 'vue-carousel';
-import VueAwesomeSwiper from 'vue-awesome-swiper';
+// import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 import 'semantic-ui-css/semantic.min.css';
+import 'slick-carousel/slick/slick.css';
 
-// import style
-import 'swiper/css/swiper.css';
 // Vue.component(EmptyView);
 
 const settings = {
@@ -26,7 +25,7 @@ const settings = {
 Vue.use(YmapPlugin, settings);
 Vue.use(Plugin);
 Vue.use(SuiVue);
-Vue.use(VueAwesomeSwiper);
+// Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false;
 
