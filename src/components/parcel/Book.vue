@@ -55,16 +55,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$card-width: 240px;
+:root {
+  --card-width: 240px;
+}
 
 .ui.card {
   box-shadow: unset;
-  width: calc($card-width);
+  width: var(--card-width);
   padding: 10px;
 
   .image-rating {
     position: relative;
-    width: $card-width;
+    width: var(--card-width);
 
     .ui.rating {
       position: absolute;
@@ -85,7 +87,7 @@ $card-width: 240px;
   .content {
     border: none;
     padding: 15px 0;
-    width: $card-width;
+    width: var(--card-width);
   }
 
   .header {
@@ -94,7 +96,7 @@ $card-width: 240px;
     margin-bottom: 5px;
     font-size: 1.2rem !important;
     height: 42px;
-    width: $card-width;
+    width: var(--card-width);
   }
 }
 
@@ -103,14 +105,14 @@ $card-width: 240px;
 .ui.cards > .card > .button,
 .ui.cards > .card > .buttons {
   box-sizing: border-box;
-  width: $card-width;
+  width: var(--card-width);
   border-radius: 10px !important;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 .book-cover {
-  max-height: $card-width;
-  max-width: $card-width;
+  max-height: var(--card-width);
+  max-width: var(--card-width);
   height: 100%;
   width: 100%;
   object-fit: cover;
