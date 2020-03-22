@@ -57,7 +57,7 @@ import "../assets/MuseoSansCyrl-900.woff2";
 export default {
   data() {
     return {
-      videoId: "eup3_i_5uaw"
+      videoId: "Ng1plqHJwBs"
     };
   }
 };
